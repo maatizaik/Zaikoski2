@@ -17,7 +17,7 @@ body {
 }
 
 .titulo-logo {
-  color: #d8bb47;
+  color: #d6af12;
   text-align: center;
   font-size: 6.5rem;
 }
@@ -29,6 +29,16 @@ body {
   width: 70%;
 }
 
+/* Vista Movil: Pantallas hasta 400px*/
+@media only screen and (max-width: 400px) {
+  .titulo-logo {
+    font-size: 3.5rem;
+  }
+
+  .subtitulo-logo {
+    font-size: 1rem;
+  }
+}
 .contenedor-inicio {
   background: linear-gradient(to right, rgba(42, 42, 43, 0.5), rgba(161, 160, 160, 0.2));
   margin: 5%;
@@ -283,7 +293,7 @@ footer {
 .subcontenedor-npro {
   width: 25%;
 }
-.subcontenedor-npro div div a h3 {
+.subcontenedor-npro a {
   text-decoration: none;
 }
 .subcontenedor-npro h3 {
@@ -301,59 +311,60 @@ footer {
   font-size: 1.5rem;
 }
 
-.contenedor-flex {
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-}
-.contenedor-flex img {
-  width: fit-content;
-}
-
-.desc-prod {
-  border: solid 1.5px cornsilk;
-  background-color: linear-gradient(70deg, white, darkgrey);
+.tit-producto {
+  font-size: 3rem;
   color: cornsilk;
   text-align: center;
-  justify-content: center;
-  padding: 2%;
-  margin-top: 4%;
+  margin-top: 3%;
+}
+
+.contenedor-flex {
+  display: flex;
   width: 100%;
-  height: 30%;
+  height: max-content;
+  justify-content: space-around;
+  align-content: space-around;
+  padding: 3%;
 }
-
-.contenedor-picada {
-  width: 40%;
-  height: fit-content;
-  margin: 4% 2%;
-}
-
-.subcont-producto {
-  width: 40%;
+.contenedor-flex .subcont-producto {
+  width: 50%;
   margin: 5% 2%;
   padding: 1%;
 }
-.subcont-producto h4 {
+.contenedor-flex .subcont-producto h4 {
   font-size: 2rem;
   color: whitesmoke;
   text-align: center;
   margin-bottom: 3%;
 }
-
-.tit-producto {
-  font-size: 3rem;
+.contenedor-flex .subcont-producto .contenedor-flex-img {
+  width: 100%;
+  height: 40%;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.contenedor-flex .subcont-producto .contenedor-flex-img .img-producto {
+  width: 45%;
+  height: 95%;
+  border-radius: 5%;
+  margin: 2%;
+}
+.contenedor-flex .subcont-producto .desc-prod {
+  border: solid 1.5px cornsilk;
+  background: linear-gradient(to bottom right, black, grey);
   color: cornsilk;
   text-align: center;
-  margin: 3%;
+  justify-content: center;
+  padding: 5%;
+  margin-top: 4%;
+  width: 100%;
+  height: auto;
 }
 
-@media only screen and (max-width: 400px) {
+/* Vista Movil: Pantallas hasta 400px*/
+@media only screen and (max-width: 650px) {
   .subcontenedor-npro h3 {
     font-size: 1.5rem;
-  }
-
-  .subcont-producto {
-    width: 95%;
   }
 
   .tit-producto, h4 {
@@ -363,15 +374,78 @@ footer {
   .contenedor-flex {
     display: block;
   }
-  .contenedor-flex img {
-    margin: 0 2%;
+  .contenedor-flex .subcont-producto {
+    width: 95%;
   }
-
-  .desc-prod {
+  .contenedor-flex .subcont-producto .contenedor-flex-img {
+    display: block;
+  }
+  .contenedor-flex .subcont-producto .contenedor-flex-img .img-producto {
+    margin: 0 2%;
+    width: 45%;
+    height: 80%;
+  }
+  .contenedor-flex .subcont-producto .desc-prod {
     width: fit-content;
     height: fit-content;
   }
 }
+/*Modo horizontal, Tablets Pantallas desde 401px hasta 640px 
+@media only screen and (min-width: 401px) and (max-width: 650px){
+    .subcontenedor-npro h3{
+        font-size: 2rem;
+    }
+    .tit-producto, h4{
+        text-align: center;
+    }
+    .contenedor-flex{
+        display: block;
+
+        .subcont-producto{
+            width: 95%;
+            .contenedor-flex-img{
+            display: block;
+
+            .img-producto{
+                margin: 0 2%;
+                width: 45%;
+                height: 80%;
+
+            }
+            }
+            .desc-prod{
+                width: fit-content;
+                height: fit-content;
+            }   
+        }
+    }
+}
+/* Tablets: Pantallas desde 651px hasta 940px 
+@media only screen and (min-width: 651px) and (max-width: 940px){
+
+    .subcont-producto{
+        width: 95%;
+
+    }
+    .tit-producto, h4{
+        text-align: center;
+    }
+
+     .contenedor-flex{
+        display: block;
+        .img-producto{
+            margin: 0 2%;
+            width: 45%;
+            height: 80%;
+        }
+    }
+    .desc-prod{
+        width: fit-content;
+        height: fit-content;
+    }
+
+}
+*/
 .h1, h2, summary {
   color: cornsilk;
   font-family: "Amatic SC", cursive;
