@@ -65,48 +65,157 @@
             </div>
         </div>
     </nav>
-    <!--Preguntas Frecuentes-->
-    <section>
-        <div class="jumbotron">
-            <h1 class="display-3">¡Gracias por confiar y elegir a Lalá!</h1>
+    <!--Tienda-->
+   
+    <h1>¡Gracias por elegir a Lalá Desayunos!</h1>
+    <h2>La sección de la tienda está en remodelación para mejorar la experiencia</h2>
+    <h3>Podes reservar el producto que quieras desde acá, y nosotros te contactamos para que el regalo llegue!</h3>
+    <!--Selección del producto-->
+    <select name="Productos" class="form-select form-select-lg mb-3">
+        <option selected>Elige el producto que querías</option>
+        <optgroup label="Meriendas"> 
+            <option value="1">Cajita N</option> 
+            <option value="2">Express</option>  
+        </optgroup> 
+        <optgroup label="Desayunos"> 
+            <option value="3">·S·O·F·T·</option> 
+            <option value="4">·S·H·I·N·E·</option>  
+        </optgroup> 
+        <optgroup label="Picadas"> 
+            <option value="5">Tamaño S</option> 
+            <option value="6">Tamaño M</option> 
+            <option value="7">Tamaño XL</option> 
+        </optgroup> 
+    </select>
+    <!--Personalización del porducto-->
+    <div class="mb-3">
+        <label for="Archivos-cliente" class="form-label">Subí las fotos que quieras agregar al desayuno</label>
+        <input class="form-control" type="file" id="Archivos-cliente" multiple>
+    </div>
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Deje un comentario aquí" id="Comentario-cliente-1"></textarea>
+        <label for="Comentario-cliente-1">Mensaje para Nota 1</label>
+    </div>
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Deje un comentario aquí" id="Comentario-cliente-2"></textarea>
+        <label for="Comentario-cliente-2">Mensaje para Nota 2</label>
+    </div>
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Deje un comentario aquí" id="Comentario-cliente-3"></textarea>
+        <label for="Comentario-cliente-3">Mensaje para Nota 3</label>
+    </div>
+    <!--Datos de Contacto Cliente-->
+    <h3>Dejanos tus datos para poder contactarte</h3>
+    <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="Nombre-cliente">
+            <label for="Nombre-cliente">Nombre</label>
           </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="Apellido-cliente">
+            <label for="Apellido-cliente">Apellido</label>
+          </div>
+        </div>
+    </div>
+    <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="email" class="form-control" id="email-cliente" placeholder="nombre@ejemplo.com">
+            <label for="email-cliente">Email</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="number" class="form-control" id="numero-cliente" placeholder="+549XXXXXXXXX">
+            <label for="numero-cliente">Numero</label>
+          </div>
+        </div>
+    </div>
+    <!--Datos de envío-->
+    <h3>Completá con los datos de quién lo va a recibir</h3>
+    <div class="row g-2">
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="Nombre-receptor">
+            <label for="Nombre-receptor">Nombre</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="Apellido-receptor">
+            <label for="Apellido-receptor">Apellido</label>
+          </div>
+        </div>
+    </div>
+    <div class="row g-3">
+        <div class="col-md">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="dirección-receptor">
+            <label for="dirección-receptor">Dirección</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <select class="form-select" id="localidad-envio" aria-label="Elige la localidad a donde se realiza el envío">
+              <option selected>Elegí la localidad</option>
+              <option value="1">Campana</option>
+              <option value="2">Zarate</option>
+            </select>
+            <label for="localidad-envio">Localidad de envío</label>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="form-floating">
+            <select class="form-select" id="horario-envio" aria-label="Elige el horario a recibir el producto">
+              <option selected>Horario de envío</option>
+              <option value="1">7 a 10 AM</option>
+              <option value="2">10 a 12 AM</option>
+              <option value="3">4 a 6 PM</option>
+              <option value="4">6 a 7.30 PM</option>
+            </select>
+            <label for="horario-envio">Horario para recibir el producto</label>
+          </div>
+        </div>
+      </div>
+      
+      <!--Medios de pagos-->
+      <h3>Por último elegí el medio de pago que vas a utilizar</h3>
+      <select class="form-select" aria-label="Elegí el medio de pago">
+        <option selected>Medios de pago</option>
+        <option value="1">Efectivo</option>
+        <option value="2">Otros medios electrónicos</option>
+      </select>
+      
+      <!-- Botón Reservar -->
+<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modaladvertencia">
+    Reservar
+  </button>
+  
+  <!-- Modal mensaje de exito-->
+  <div class="modal fade" id="modaladvertencia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¡Tu reserva se generó con éxito!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>En breve te estaremos contactando</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <h2 class="faq-lala-titulos">
-            Revisá esta sección para sacarte todas tus dudas!
-        </h2>
-       
-        <details>
-        <summary>¿Qué es Lalá?</summary>
-            <p class="faq-lala"> Lalá nació en 2019 y desde entonces no paró de crecer.
-                Disfrutamos mucho de cocinar y nos encanta poder ser tu primera opción a la hora de enviar un regalo.
-                Está 100% certificado que todos los que nos eligieron una vez, lo vuelven a hacer.</p>
-        </details>
-        <details>
-            <summary>¿Hacen envíos a domicilio?</summary>
-            <p class="faq-lala">Si, hacemos envíos dentro de Campana, Zarate y alrededores</p>
-        </details>
-        <details>
-            <summary>¿Los productos son frescos?</summary>
-            <p class="faq-lala">Todo es cocinado en el día de la entrega, por eso la mayoría de nuestros productos son por encargue</p>
-        </details>
-        <details>
-            <summary>¿Que medios de pago aceptan?</summary>
-            <p class="faq-lala">Aceptamos todos los medios de pago (efectivo, transferencias bancarias, débito/crédito y Mercado Pago</p>
-        </details>
-        <details>
-            <summary>¿Tienen opciones para regalos empresariales?</summary>
-            <p class="faq-lala">Si. Hacemos desayunos, meriendas o picadas para regalar. Las reservas se hacen con mínimo 25 días de anticipación.
-                Pedinos presupuestos!
-            </p>
-        </details>
-
-     
 
 
 
 
-
-    </section>
     <!--Barra de Redes Sociales-->
     <div class="social">
 		<ul>
@@ -146,6 +255,7 @@
             </p>
         </div>
     </footer>
+
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
