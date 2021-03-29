@@ -1,15 +1,28 @@
-.h1, h2, summary{
+.contenedor-faq{
+    width: 90%;
+    height: 50%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    .enfasis-faq{
+        width: 50%;
+        margin-top: 4%;
+        text-align: center;
+        align-items: center;
+        vertical-align: auto;
+        .display-3 {
+            color: whitesmoke;
+        }
+    }
+}
+
+h2, h3, summary{
     color:cornsilk;
     font-family:'Amatic SC', cursive;
 
 }
-.display-3{
-    color: whitesmoke;
-}
 
-h1{
-    text-align: center;
-}
 
 .faq-lala-titulos{
 text-align: center;

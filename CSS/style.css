@@ -42,15 +42,19 @@ body {
 .contenedor-inicio {
   background: linear-gradient(to right, rgba(42, 42, 43, 0.5), rgba(161, 160, 160, 0.2));
   margin: 5%;
+  width: 90%;
+  height: 50%;
 }
 
 .agrupador {
   display: flex;
   justify-content: space-around;
+  padding: 2%;
 }
 
 .contenedor-inicio-texto {
   margin-left: 2%;
+  width: 50%;
 }
 .contenedor-inicio-texto h3, .contenedor-inicio-texto h4, .contenedor-inicio-texto p {
   text-align: center;
@@ -71,14 +75,17 @@ body {
 
 .contenedor-inicio-imagen {
   margin-right: 0;
+  width: 50%;
+  height: auto;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .contenedor-inicio, .contenedor-inicio-texto {
-    display: block;
+    width: 80%;
+    height: 60%;
   }
 
-  .agrupador img {
+  .agrupador img, .contenedor-inicio-imagen {
     display: none;
   }
 }
@@ -446,17 +453,28 @@ footer {
 
 }
 */
-.h1, h2, summary {
-  color: cornsilk;
-  font-family: "Amatic SC", cursive;
+.contenedor-faq {
+  width: 90%;
+  height: 50%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
 }
-
-.display-3 {
+.contenedor-faq .enfasis-faq {
+  width: 50%;
+  margin-top: 4%;
+  text-align: center;
+  align-items: center;
+  vertical-align: auto;
+}
+.contenedor-faq .enfasis-faq .display-3 {
   color: whitesmoke;
 }
 
-h1 {
-  text-align: center;
+h2, h3, summary {
+  color: cornsilk;
+  font-family: "Amatic SC", cursive;
 }
 
 .faq-lala-titulos {

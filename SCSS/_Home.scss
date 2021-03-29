@@ -1,13 +1,17 @@
 .contenedor-inicio{
     background: linear-gradient(to right, rgba(42, 42, 43, 0.5), rgba(161, 160, 160, 0.2));
     margin: 5%;
+    width: 90%;
+    height: 50%;
 }
 .agrupador{
     display: flex;
     justify-content: space-around;
+    padding: 2%;
 }
 .contenedor-inicio-texto{
     margin-left: 2%;
+    width: 50%;
     h3,h4,p{
         text-align: center;
         color: cornsilk;
@@ -28,14 +32,17 @@
 }
 .contenedor-inicio-imagen{
     margin-right: 0;
+    width: 50%;
+    height: auto;
     
 
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
    .contenedor-inicio, .contenedor-inicio-texto{
-       display: block;
+       width: 80%;
+       height: 60%;
    }
-.agrupador img{
+.agrupador img, .contenedor-inicio-imagen{
     display: none;
 }
 }
