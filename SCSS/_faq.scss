@@ -23,7 +23,6 @@ h2, h3, summary{
 
 }
 
-
 .faq-lala-titulos{
 text-align: center;
 margin: 2%;
@@ -38,5 +37,15 @@ summary{
 .faq-lala{
     color: whitesmoke;
     font-size: 1.5rem;
-    margin-left: 5%;
+    margin: 2% 9%;
+}
+@media only screen and (max-width: 600px) {
+    
+    .faq-lala-titulos, summary{
+        font-size: 95%;
+    }
+    
+    .faq-lala{
+        font-size: 85%;
+    }
 }

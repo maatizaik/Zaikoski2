@@ -67,127 +67,142 @@
     </nav>
     <!--Tienda-->
    
-    <h1>¡Gracias por elegir a Lalá Desayunos!</h1>
-    <h2>La sección de la tienda está en remodelación para mejorar la experiencia</h2>
-    <h3>Podes reservar el producto que quieras desde acá, y nosotros te contactamos para que el regalo llegue!</h3>
+    <h2 class="preguntas-frecuentes-titulo">¡Gracias por elegir a Lalá Desayunos!</h2>
+    <h2 class="preguntas-frecuentes-titulo">La sección de la tienda está en remodelación para mejorar la experiencia</h2>
+    <h3 class="preguntas-frecuentes-titulo">Podes reservar el producto que quieras desde acá, y nosotros te contactamos para que el regalo llegue!</h3>
     <!--Selección del producto-->
-    <select name="Productos" class="form-select form-select-lg mb-3">
-        <option selected>Elige el producto que querías</option>
-        <optgroup label="Meriendas"> 
-            <option value="1">Cajita N</option> 
-            <option value="2">Express</option>  
-        </optgroup> 
-        <optgroup label="Desayunos"> 
-            <option value="3">·S·O·F·T·</option> 
-            <option value="4">·S·H·I·N·E·</option>  
-        </optgroup> 
-        <optgroup label="Picadas"> 
-            <option value="5">Tamaño S</option> 
-            <option value="6">Tamaño M</option> 
-            <option value="7">Tamaño XL</option> 
-        </optgroup> 
-    </select>
-    <!--Personalización del porducto-->
-    <div class="mb-3">
-        <label for="Archivos-cliente" class="form-label">Subí las fotos que quieras agregar al desayuno</label>
-        <input class="form-control" type="file" id="Archivos-cliente" multiple>
+    <div class="tamaño-form">
+      <select name="Productos" class="form-select form-select-lg mb-3">
+          <option selected>Elige el producto que querías</option>
+          <optgroup label="Meriendas"> 
+              <option value="1">Cajita N</option> 
+              <option value="2">Express</option>  
+          </optgroup> 
+          <optgroup label="Desayunos"> 
+              <option value="3">·S·O·F·T·</option> 
+              <option value="4">·S·H·I·N·E·</option>  
+          </optgroup> 
+          <optgroup label="Picadas"> 
+              <option value="5">Tamaño S</option> 
+              <option value="6">Tamaño M</option> 
+              <option value="7">Tamaño XL</option> 
+          </optgroup> 
+      </select>
     </div>
-    <div class="form-floating">
+    <!--Personalización del porducto-->
+    <div class="tamaño-form">
+      <div class="mb-3">
+        <h3 class="form-label">Subí las fotos que quieras agregar al desayuno</h3>
+          <label for="Archivos-cliente" class="form-label"></label>
+          <input class="form-control" type="file" id="Archivos-cliente" multiple>
+      </div>
+        <h3 class="form-label">Acá podés elegir que ponerle en las notas!</h3>
+      <div class="form-floating">
         <textarea class="form-control" placeholder="Deje un comentario aquí" id="Comentario-cliente-1"></textarea>
         <label for="Comentario-cliente-1">Mensaje para Nota 1</label>
-    </div>
-    <div class="form-floating">
-        <textarea class="form-control" placeholder="Deje un comentario aquí" id="Comentario-cliente-2"></textarea>
-        <label for="Comentario-cliente-2">Mensaje para Nota 2</label>
-    </div>
-    <div class="form-floating">
-        <textarea class="form-control" placeholder="Deje un comentario aquí" id="Comentario-cliente-3"></textarea>
-        <label for="Comentario-cliente-3">Mensaje para Nota 3</label>
+      </div>
+      <div class="form-floating">
+          <textarea class="form-control" placeholder="Deje un comentario aquí" id="Comentario-cliente-2"></textarea>
+          <label for="Comentario-cliente-2">Mensaje para Nota 2</label>
+      </div>
+      <div class="form-floating">
+          <textarea class="form-control" placeholder="Deje un comentario aquí" id="Comentario-cliente-3"></textarea>
+          <label for="Comentario-cliente-3">Mensaje para Nota 3</label>
+      </div>
     </div>
     <!--Datos de Contacto Cliente-->
-    <h3>Dejanos tus datos para poder contactarte</h3>
-    <div class="row g-2">
-        <div class="col-md">
-          <div class="form-floating">
-            <input type="text" class="form-control" id="Nombre-cliente">
-            <label for="Nombre-cliente">Nombre</label>
+    
+    <div class="tamaño-form">
+      <h3 class="form-label">Dejanos tus datos para poder contactarte</h3>
+      <div class="row g-2">
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="Nombre-cliente">
+              <label for="Nombre-cliente">Nombre</label>
+            </div>
           </div>
-        </div>
-        <div class="col-md">
-          <div class="form-floating">
-            <input type="text" class="form-control" id="Apellido-cliente">
-            <label for="Apellido-cliente">Apellido</label>
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="Apellido-cliente">
+              <label for="Apellido-cliente">Apellido</label>
+            </div>
           </div>
-        </div>
-    </div>
-    <div class="row g-2">
-        <div class="col-md">
-          <div class="form-floating">
-            <input type="email" class="form-control" id="email-cliente" placeholder="nombre@ejemplo.com">
-            <label for="email-cliente">Email</label>
+      </div>
+      <div class="row g-2">
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="email" class="form-control" id="email-cliente" placeholder="nombre@ejemplo.com">
+              <label for="email-cliente">Email</label>
+            </div>
           </div>
-        </div>
-        <div class="col-md">
-          <div class="form-floating">
-            <input type="number" class="form-control" id="numero-cliente" placeholder="+549XXXXXXXXX">
-            <label for="numero-cliente">Numero</label>
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="number" class="form-control" id="numero-cliente" placeholder="+549XXXXXXXXX">
+              <label for="numero-cliente">Numero</label>
+            </div>
           </div>
-        </div>
+      </div>
     </div>
     <!--Datos de envío-->
-    <h3>Completá con los datos de quién lo va a recibir</h3>
-    <div class="row g-2">
-        <div class="col-md">
-          <div class="form-floating">
-            <input type="text" class="form-control" id="Nombre-receptor">
-            <label for="Nombre-receptor">Nombre</label>
+    
+    <div class="tamaño-form">
+      <h3 class="form-label">Completá con los datos de quién lo va a recibir</h3>
+      <div class="row g-2">
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="Nombre-receptor">
+              <label for="Nombre-receptor">Nombre</label>
+            </div>
           </div>
-        </div>
-        <div class="col-md">
-          <div class="form-floating">
-            <input type="text" class="form-control" id="Apellido-receptor">
-            <label for="Apellido-receptor">Apellido</label>
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="Apellido-receptor">
+              <label for="Apellido-receptor">Apellido</label>
+            </div>
           </div>
-        </div>
-    </div>
-    <div class="row g-3">
-        <div class="col-md">
-          <div class="form-floating">
-            <input type="text" class="form-control" id="dirección-receptor">
-            <label for="dirección-receptor">Dirección</label>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="form-floating">
-            <select class="form-select" id="localidad-envio" aria-label="Elige la localidad a donde se realiza el envío">
-              <option selected>Elegí la localidad</option>
-              <option value="1">Campana</option>
-              <option value="2">Zarate</option>
-            </select>
-            <label for="localidad-envio">Localidad de envío</label>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="form-floating">
-            <select class="form-select" id="horario-envio" aria-label="Elige el horario a recibir el producto">
-              <option selected>Horario de envío</option>
-              <option value="1">7 a 10 AM</option>
-              <option value="2">10 a 12 AM</option>
-              <option value="3">4 a 6 PM</option>
-              <option value="4">6 a 7.30 PM</option>
-            </select>
-            <label for="horario-envio">Horario para recibir el producto</label>
-          </div>
-        </div>
       </div>
+      <div class="row g-3">
+          <div class="col-md">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="dirección-receptor">
+              <label for="dirección-receptor">Dirección</label>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="form-floating">
+              <select class="form-select" id="localidad-envio" aria-label="Elige la localidad a donde se realiza el envío">
+                <option selected>Elegí la localidad</option>
+                <option value="1">Campana</option>
+                <option value="2">Zarate</option>
+              </select>
+              <label for="localidad-envio">Localidad de envío</label>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="form-floating">
+              <select class="form-select" id="horario-envio" aria-label="Elige el horario a recibir el producto">
+                <option selected>Horario de envío</option>
+                <option value="1">7 a 10 AM</option>
+                <option value="2">10 a 12 AM</option>
+                <option value="3">4 a 6 PM</option>
+                <option value="4">6 a 7.30 PM</option>
+              </select>
+              <label for="horario-envio">Horario para recibir el producto</label>
+            </div>
+          </div>
+      </div>
+    </div>
       
       <!--Medios de pagos-->
-      <h3>Por último elegí el medio de pago que vas a utilizar</h3>
-      <select class="form-select" aria-label="Elegí el medio de pago">
-        <option selected>Medios de pago</option>
-        <option value="1">Efectivo</option>
-        <option value="2">Otros medios electrónicos</option>
-      </select>
+      
+      <div class="tamaño-form">
+        <h3 class="form-label">Por último elegí el medio de pago que vas a utilizar</h3>
+        <select class="form-select" aria-label="Elegí el medio de pago">
+          <option selected>Medios de pago</option>
+          <option value="1">Efectivo</option>
+          <option value="2">Otros medios electrónicos</option>
+        </select>
+      </div>
       
       <!-- Botón Reservar -->
 <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modaladvertencia">
@@ -206,7 +221,7 @@
           <p>En breve te estaremos contactando</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>

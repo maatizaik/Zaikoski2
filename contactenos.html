@@ -65,22 +65,50 @@
             </div>
         </div>
     </nav>
+    <h3></h3>
     <!--Formulario de contacto-->
     <section class="form-lala">
+        
         <h3 class="preguntas-frecuentes-titulo">
-            Si tenés otra duda, avisanos
+            Revisá nuestro sitio de preguntas frecuentes <a href="../Version-Final/FAQ.html">acá</a>
+        </h3>
+        <h3 class="preguntas-frecuentes-titulo">
+            Si tenés otra duda, avisanos 
         </h3>
         <div class="mb-3 tamaño-form">
-            <label for="exampleFormControlInput1" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-            <label for="exampleFormControlInput1" class="form-label">Telefono</label>
-            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="+549xxxxxxxxxx">
+            <label for="nombre-contacto" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre-contacto" placeholder="Nombre y Apellido">
+            <label for="email-contacto" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email-contacto" placeholder="nombre@ejemplo.com">
+            <label for="telefono-contacto" class="form-label">Telefono</label>
+            <input type="number" class="form-control" id="telefono-contacto" placeholder="+549xxxxxxxxxx">
           </div>
           <div class="mb-3 tamaño-form">
             <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Dejanos tu consulta"></textarea>
           </div>
-          <button type="button" class="btn btn-light">Enviar</button>
+                <!-- Botón Reservar -->
+<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modaladvertencia">
+    Enviar
+  </button>
+  
+  <!-- Modal mensaje de exito-->
+  <div class="modal fade" id="modaladvertencia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¡Tu consulta se generó con éxito!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p>En breve te estaremos contactando</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
     </section>
 
     <!--Barra de Redes Sociales-->
